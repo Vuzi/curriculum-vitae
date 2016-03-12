@@ -1,0 +1,351 @@
+body {
+	font-family: Lato;
+    margin: 0;
+
+    font-weight: 400;
+
+    background: url('../img/crossword.png');
+
+    // Force to print with every element
+    -webkit-print-color-adjust:exact;
+}
+
+section, .section {
+    margin: 10mm auto;
+
+    width: 210mm;
+    height: 297mm;
+
+	font-size: 90%;
+
+    background: white;
+    box-shadow: 0px 0px 24px -2px lightgray;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+
+    html, body {
+        width: 210mm;
+        height: 297mm;        
+    }
+}
+
+@media print {
+	section, .section {
+    	margin: 0;
+
+	    width: 210mm;
+	    height: 296.9mm; // Otherwise it will leap on a blank page
+
+    	box-shadow: none;
+	}
+}
+
+h1 {
+	font-size: 150%;
+
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.1cm;
+	margin-left: -15px;
+
+	&:first-child {
+		margin-top: 0cm;
+	}
+}
+
+h3 {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.left {
+
+	.panel {
+	}
+}
+
+.right {
+	width: 65%;
+	height: 100%;
+	display: inline-block;
+}
+
+.panel {
+	width: ~"calc(100% - 2cm)";
+	height: ~"calc(100% - 2cm)";
+	margin: 0.5cm;
+	padding: 0.5cm;
+}
+
+.zone {
+	margin-bottom: 0.8cm;
+}
+
+// Personnal informations panel
+.left {
+	width: 35%;
+	height: 100%;
+	float: left;
+
+	.panel {
+		text-align: center;
+		border-right: 5px solid #cc3300;
+
+		background-image: url('../img/congruent_pentagon.png');
+    	box-shadow: 0px 0px 10px -4px;
+		
+   		display: block;
+
+   		// Name
+		h1 {
+			font-size: 280%;
+			font-family: "PT Sans";
+
+	    	width: 100%;
+	    	margin: 0;
+    		margin-bottom: 1.2cm;
+		}
+
+		.personal-information {
+
+			border: 2px dashed lightgray;
+			border-radius: 6px;
+			padding: 0.1cm;
+			padding-left: 0.3cm;
+			font-size: 88%;
+
+			margin-bottom: 2cm;
+
+			ul {
+				text-align: left;
+
+				li {
+					.fa {
+						width: 0.7cm;
+					}
+
+					a {
+						text-decoration: inherit;
+						color: inherit;
+
+						&:hover {
+							color: gray;
+						}
+					}
+
+					padding-bottom: 0.2cm;
+				}
+			}
+		}
+
+		.languages, .hobbies, .about {
+			font-size: 90%;
+			text-align: left;
+
+			ul {
+				margin-top: 0.2cm;
+
+				li {
+					padding-left: 0.3cm;
+					padding-bottom: 0.2cm;
+				}
+			}
+
+			p {
+				padding-left: 0.3cm;
+			}
+		}
+	}
+}
+
+// Central elements
+.professional-experience, .education, .project {
+	.dates {
+		font-size: 97%;
+		color: white;
+		float: right;
+
+		background-color: lightslategrey;
+		border-radius: 3px;
+
+		float: right;
+		padding: 2px 6px 2px 6px;
+    	margin-top: -0.05cm;
+	}
+
+	.tags {
+		font-size: 97%;
+
+		span {
+			color: white;
+			float: right;
+
+			background-color: #FF6968;
+			border-radius: 3px;
+
+			float: right;
+			padding: 2px 6px 2px 6px;
+			margin-right: 2px;
+	    	margin-top: -0.05cm;
+		}
+	}
+
+	.company {
+		font-size: 110%;
+		
+		&:after {
+			content: ", ";
+			display: inline-block;
+			text-align: center;
+    		width: 0.15cm;
+		}
+	}
+
+	.status {
+		font-size: 110%;
+		color: darkgray;
+	}
+
+	.detail {
+		font-size: 80%;
+		font-style: italic;
+		color: gray;
+
+		margin-top: 0.2cm;
+	}
+
+	.links {
+		text-align: center;
+
+		a {
+	  		display: inline-block;
+	  		color: gray;
+	  		text-decoration: inherit;
+	    	font-size: 85%;
+	    	
+	    	padding: 0 6px 3px 6px;
+	    	margin-bottom: 0.2cm;
+
+	    	border-radius: 3px;
+	    	border: 1px solid lightgray;
+
+	  		&:before {
+				content:'';
+		  		background-image: url('../img/link.svg');
+		  		background-size: contain;
+		  		background-repeat: no-repeat;
+		  		background-position: center;
+
+		  		width: 0.5cm;
+		  		height: 0.5cm;
+		  		display: inline-block;
+
+		  		margin-right: 0.1cm;
+		   		margin-bottom: -5px;
+			}
+
+	  		&.github:before {
+		  		background-image: url('../img/github.svg');
+			}
+
+			&.npm:before {
+		  		background-image: url('../img/npm.svg');
+			}
+
+			&:hover {
+				color: black;
+	    		border-color: black;
+			}
+		}
+	}
+
+	p {
+		text-align: justify;
+		font-size: 90%;
+		span {
+			display: inline-block;
+			margin-bottom: 0.2cm;
+		}
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	// Bottom bar
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom: 0.2cm;
+}
+
+// Special case for links
+.skills {
+    display: block;
+
+	ul:first-child {
+		float: left;
+
+	}
+
+	ul:not(first-child) {
+		float: right;
+	}
+
+	ul {
+		padding: 10px;
+	    position: relative;
+
+    	margin-top: 0;
+	    padding-left: 0;
+	    width: 45%;
+
+		li {
+			&:after {
+		    	position: absolute;
+		    	color: lightgray;
+		    	right: 0;
+			}
+
+			&.forOnFor:after {
+				content: "\2b24\2b24\2b24\2b24";
+			}
+
+			&.treeOnFor:after {
+				content: "\2b24\2b24\2b24";
+			}
+
+			&.twoOnFor:after {
+				content: "\2b24\2b24";
+			}
+
+			&.oneOnFor:after {
+				content: "\25ef\25ef\25ef\2b24";
+			}
+
+			&.zeroOnFor:after {
+				content: "\25ef\25ef\25ef\25ef";
+			}
+
+			span {
+				color: grey;
+				font-size: 85%;
+			}
+			
+			// Bottom bar
+		    border-bottom: 1px solid #F1F1F1;
+		    padding-bottom: 0.1cm;
+		}
+
+		li:last-child {
+		    border-bottom: 0px;
+		}
+	}
+}

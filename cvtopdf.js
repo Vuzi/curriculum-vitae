@@ -28,6 +28,6 @@ page.open(address, function (status) {
 
             console.log('Done !');
             phantom.exit();
-        }, 500);
+        }, 1500);
     }
 });

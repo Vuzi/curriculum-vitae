@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 	<!-- Use this style -->
-	<link rel="stylesheet/less" type="text/css" href="css/cv-style.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/cv-style2.less" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
 	<!-- For nice icons -->
@@ -17,24 +17,26 @@
 </head>
 <body>
 	<div class="section page" id="pdf">
-		<div class="left">
+		<div class="left personal">
 			<div class="panel">
-				<h1>Guillaume VILLEREZ</h1>
+
+        <div class="info">
+          <img class="photo" src="img/photo.jpg">
+          <h1>Guillaume Villerez</h1>
+          <h2>Lead développeur, ReachFive</h2>
+          <h3>Région parisienne, France</h3>
+        </div>
 
 				<!-- Contact information -->
 				<div class="personal-information">
 					<ul>
 						<li>
 							<span class="fa fa-map-marker"></span>
-							Deuil-La-Barre, Val-d'Oise
+              Région parisienne, France
 						</li>
 						<li>
 							<span class="fa fa-envelope-o"></span>
 							<a href="mailto:guillaume@villerez.fr">guillaume@villerez.fr</a>
-						</li>
-						<li>
-							<span class="fa fa-phone"></span>
-							06 14 86 60 21
 						</li>
 						<li>
 							<span class="fa fa-external-link"></span>
@@ -54,23 +56,204 @@
 				<!-- About -->
 				<div class="zone">
 					<h3>À propos</h3>
-					<span class="about">
+					<div class="about">
 						<p>
 						Curieux et passionné depuis toujours par l'informatique et les nouvelles technologies,
 						je travaille actuellement pour Zengularity après avoir terminé un master dans le domaine de l'architecture logicielle
 						</p>
-					</span>
+					</div>
 				</div>
 
 				<!-- Languages -->
 				<div class="zone">
 					<h3>Langues</h3>
-					<span class="languages">
+					<div class="languages">
 						<ul>
 							<li>Anglais, professionnel<br/>(TOEIC 970/990)</li>
 						</ul>
-					</span>
+					</div>
 				</div>
+
+			</div>
+		</div>
+		<div class="right">
+			<div class="panel">
+				<!-- Skills -->
+				<div class="zone">
+					<h1>Compétences</h1>
+					<div class="skills">
+            <div class="skill-line forOnFor">
+              <div class="skill-tile">Scala</div>
+              <span class="logo logo-small scala"></span>
+              <div class="skill-detail">FP, Play, Akka (Http, Actor, Streams), Cats, Cats Effect, Doobie</div>
+            </div>
+
+            <div class="skill-line forOnFor">
+              <div class="skill-tile">TypeScript</div>
+              <span class="logo logo-small typescript"></span>
+              <div class="skill-detail">Front & back, React, Redux, Express, Spacelift</div>
+            </div>
+
+            <div class="skill-line forOnFor">
+              <div class="skill-tile">Java</div>
+              <span class="logo logo-small java"></span>
+              <div class="skill-detail">JEE, Spring, Hibernate, Swing, JavaFX</div>
+            </div>
+
+            <div class="skill-line forOnFor">
+              <div class="skill-tile">SQL & NoSQL</div>
+              <div class="skill-detail">PostgreSQL, MySQL, MongoDB, ElasticSearch</div>
+            </div>
+
+            <div class="skill-line twoOnFor">
+              <div class="skill-tile">C/C++</div>
+              <div class="skill-detail">Système Unix, Phread</div>
+            </div>
+
+            <div class="skill-line twoOnFor">
+              <div class="skill-tile">Kafka</div>
+              <div class="skill-detail"></div>
+            </div>
+
+					</div>
+				</div>
+
+				<!-- Professional experiences -->
+				<div class="zone">
+					<h1>Expérience professionnelle</h1>
+					<div class="professional-experience">
+						<div>
+								<span class="dates">2018 - Présent</span>
+                <span class="logo logo-title reachfive"></span>
+								<span class="company">ReachFive</span>
+								<span class="status">Lead Développeur</span>
+						</div>
+            <div class="tags">
+              <span>Scala</span>
+              <span>TypeScript</span>
+              <span>ElasticSearch</span>
+              <span>Kafka</span>
+            </div>
+            <div class="quote">
+              La solution de Customer Identity and Access Management (CIAM) de ReachFive permet aux entreprises une gestion
+              complète et sécurisée de leurs clients sur l’ensemble de leurs points de contact, online et offline.
+            </div>
+            <div class="summary">
+              <p>
+                Reprise de la codebase, structuration du développement (revues de code, intégration continue & clean code),
+                lancement de divers chantiers de refactoring pour résorber la dette technique et mise en place des dernières
+                fonctionnalités pour offrir une solution CIAM complète à l'ensemble de nos clients (Boulanger, Engie, Lacoste, etc..).
+              </p>
+            </div>
+						<div class="links links-up">
+							<a href="https://www.reachfive.com/fr/" class="link">www.reachfive.com</a>
+            </div>
+					</div>
+					<div class="professional-experience">
+            <div>
+              <span class="dates">2016 - 2018</span>
+              <span class="logo logo-title zen"></span>
+              <span class="company">Zengularity</span>
+              <span class="status">Architecte logiciel</span>
+            </div>
+            <div class="tags">
+              <span>Scala</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="quote">
+              Zengularity est une entreprise française spécialisée dans le web de demain. Adepte des nouvelles technologies
+              celle-ci propose des choix adaptés et modernes aux entreprises souhaitant effectuer leur révolution numérique
+            </div>
+            <div class="summary">
+              <p>
+                Développement d'une plateforme web facilitant la mise en relation des différents acteurs du métier de la mutuelle
+                afin de les accompagner dans leur transition numérique. Utilisation de l'event-sourcing afin de retranscrire au
+                mieux les événements métier.
+              </p>
+              <p>
+                Développement d'une plateforme d'onboarding pour un grand groupe bancaire afin de numériser un processus papier
+                et les accompagner dans leur transition numérique.
+              </p>
+            </div>
+						<div class="links links-up">
+							<a href="https://www.fabernovel.com/fr" class="link">www.fabernovel.com</a>
+            </div>
+					</div>
+					<div class="professional-experience">
+            <div>
+              <span class="dates">2014 - 2016</span>
+              <span class="logo logo-title alter"></span>
+              <span class="company">Alter-Frame</span>
+              <span class="status">Développeur</span>
+            </div>
+            <div class="tags">
+              <span>Java</span>
+              <span>OracleDB</span>
+              <span>JEE</span>
+            </div>
+            <div class="quote">
+              Alter Frame est la structure d’édition de logiciels et de développement au forfait d’Alter Groupe.
+              Cette structure a pour vocation d’apporter une véritable plus value qualitative dans la réalisation
+              de solutions full-web et le développement de projets informatiques.
+            </div>
+            <div class="summary">
+              <p>
+                Développement d’un nouvel outil sur une suite logicielle de dimensionnement de batteries et
+                d’alternateurs pour un constructeur automobile Français.
+              </p>
+              <p>
+                Réalisation d’une application de visualisation de données satellite (fichier) sur une projection
+                en deux dimensions de la terre.
+              </p>
+            </div>
+						<div class="links links-up">
+							<a href="https://alter-solutions.com/" class="link">alter-solutions.com</a>
+            </div>
+          </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="section page" id="pdf">
+		<div class="left personal">
+			<div class="panel">
+
+        <div class="info">
+          <img class="photo" src="img/photo.jpg">
+          <h1>Guillaume Villerez</h1>
+          <h2>Lead développeur, ReachFive</h2>
+          <h3>Région parisienne, France</h3>
+        </div>
+
+        <!-- Contact information -->
+        <div class="personal-information">
+          <ul>
+            <li>
+              <span class="fa fa-map-marker"></span>
+              Région parisienne, France
+            </li>
+            <li>
+              <span class="fa fa-envelope-o"></span>
+              <a href="mailto:guillaume@villerez.fr">guillaume@villerez.fr</a>
+            </li>
+            <li>
+              <span class="fa fa-external-link"></span>
+              <a href="http://villerez.fr/">g.villerez.fr</a>
+            </li>
+            <li>
+              <span class="fa fa-linkedin-square"></span>
+              <a href="https://www.linkedin.com/in/villerez">linkedin.com/in/villerez</a>
+            </li>
+            <li>
+              <span class="fa fa-github"></span>
+              <a href="https://github.com/Vuzi">github.com/Vuzi</a>
+              </li>
+          </ul>
+        </div>
 
 				<!-- Hobbies -->
 				<div class="zone">
@@ -102,139 +285,131 @@
 		</div>
 		<div class="right">
 			<div class="panel">
-				<!-- Skills -->
-				<div class="zone">
-					<h1>Compétences</h1>
-					<span class="skills">
-						<ul>
-							<li class="forOnFor">Scala <span>(Play, Akka)</span></li>
-							<li class="forOnFor">Java <span>(SE et EE)</span></li>
-							<li class="treeOnFor">Android <span>(4/5/6)</span></li>
-							<li class="treeOnFor">C/C++ <span></span></li>
-							<li class="twoOnFor">Python <span>(2.7 et 3.5)</span></li>
-						</ul>
-						<ul class="skills">
-							<li class="forOnFor">Node.js <span>(Express, plugin)</span></li>
-							<li class="forOnFor">TypeScript <span>(React)</span></li>
-							<li class="treeOnFor">C# <span>(.NET)</span></li>
-							<li class="forOnFor">SQL <span>(Postgre, MySQL)</span></li>
-							<li class="treeOnFor">NoSQL <span>(MongoDB)</span></li>
-						</ul>
-					</span>
-				</div>
-
-				<!-- Professional experiences -->
-				<div class="zone">
-					<h1>Expérience professionnelle</h1>
-					<div class="professional-experience">
-						<span class="dates">2016 - Présent</span>
-						<span class="company">Zengularity</span>
-						<span class="status">Architecte logiciel</span>
-						<p>
-							<span>
-								Développement avec Play Framework (Scala) pour de grandes mutelles françaises d'un outil de suivi de mission en event-sourcing, permettant d'offrir un extranet moderne tout en harmonisant les échanges entres les différents services existants.
-							</span>
-						</p>
-					</div>
-					<div class="professional-experience">
-						<span class="dates">2014 - 2016</span>
-						<span class="company">Alter-Frame</span>
-						<span class="status">Développeur</span>
-						<p>
-							<span>
-								Développement d’un nouvel outil sur une suite logicielle de dimensionnement de batteries et d’alternateurs pour un constructeur automobile Français.
-							</span>
-							<span>
-								Réalisation d’une application de visualisation de données satellite (fichier) sur une projection en deux dimensions de la terre.
-							</span>
-						</p>
-					</div>
-					<div class="professional-experience">
-						<span class="dates">2014 - Stage de 3 mois</span>
-						<span class="company">Scality</span>
-						<span class="status">Développeur</span>
-						<p>
-							Choix et mise en place d’un framework de tests unitaires dans une solution réalisée en C, avec portage des tests existants, et intégration du framework.
-						</p>
-					</div>
-				</div>
 
 				<!-- Educations -->
 				<div class="zone">
-					<h1>Formation</h1>
-					<div class="education">
-						<span class="dates">2014 - 2016</span>
-						<span class="company">Master Architecture logicielle</span>
-						<span class="status">ESGI</span>
-						<p class="detail">Titre niveau I d'expert en ingénierie de l’informatique et des systèmes d’information</p>
-					</div>
-					<div class="education">
-						<span class="dates">2011 - 2014</span>
-						<span class="company">Bachelor Architecture logicielle</span>
-						<span class="status">ESGI</span>
-						<p class="detail">Titre niveau II de chef de projet logiciel et réseaux</p>
-					</div>
-					<div class="education">
-						<span class="dates">2010</span>
-						<span class="company">Baccalauréat</span>
-						<span class="status">École notre Dame Providence</span>
-						<p class="detail">Baccalauréat Scientifique - Mention assez bien</p>
-					</div>
-				</div>
+            <h1>Formation</h1>
+            <div class="education">
+              <div>
+                <span class="dates">2014 - 2016</span>
+                <span class="company">Master Architecture logicielle</span>
+                <span class="status">ESGI</span>
+              </div>
+              <div class="detail">
+                Titre niveau I d'expert en ingénierie de l’informatique et des systèmes d’information
+              </div>
+              <div class="quote">
+                  La spécialisation en Architecture des logiciels est une formation d'expert sur les méthodes de conception et de réalisation de solutions logicielles répondant aux besoins complexes des entreprises.
+              </div>
+            </div>
+            <div class="education">
+              <div>
+                <span class="dates">2011 - 2014</span>
+                <span class="company">Bachelor Architecture logicielle</span>
+                <span class="status">ESGI</span>
+              </div>
+              <div class="detail">
+                Titre niveau II de chef de projet logiciel et réseaux
+              </div>
+              <div class="quote">
+                  Le Cycle Bachelor en informatique de l'ESGI spécialisé en Architecture des Logiciels permet aux étudiants d'acquérir des compétences opérationnelles au travers de nombreux projets pédagogiques , tout en acquérant des compétences d'architecture logicielle.
+              </div>
+            </div>
+            <div class="education">
+              <div>
+                <span class="dates">2010</span>
+                <span class="company">Baccalauréat</span>
+                <span class="status">École notre Dame Providence</span>
+              </div>
+              <div class="detail">
+                Baccalauréat Scientifique
+              </div>
+              <div class="quote"></div>
+            </div>
+          </div>
 
 				<!-- Projects -->
 				<div class="zone">
 					<h1>Projets personnels</h1>
 					<div class="project">
-						<span class="company">Raspi-sensor</span>
-						<span class="status">Plugin Node.js C++</span>
+            <div>
+              <span class="company">Cumulus</span>
+              <span class="status">Cloud personnel</span>
+            </div>
+						<span class="tags">
+							<span>Scala</span>
+							<span>Play</span>
+              <span>Akka Stream</span>
+              <span>TypeScript</span>
+            </span>
+            <div class="quote">
+                Serveur de stockage de fichier réalisé en Scala avec Play Framework. Les fichiers
+                stockés peuvent être compressés et chiffrés afin de pouvoir les sécuriser.
+            </div>
+            <div class="summary">
+              <p>
+                Les différentes opérations sur les fichiers ont été réalisées avec Akka Stream, à l'aide de
+                Flow custom permettant de (dé)compresser et/ou de (dé)chiffrer à la volée les données des fichiers.
+              </p>
+              <p>
+                Ces fichiers sont organisés dans une arborescence suportant toutes les opérations classiques
+                (déplacement, suppression, etc..) permettant de les organiser comme un file system classique.
+              </p>
+            </div>
+						<span class="links">
+							<a href="https://github.com/Cumulus-Cloud/cumulus" class="github">github.com/Cumulus-Cloud/cumulus</a>
+						</span>
+					</div>
+					<div class="project">
+            <div>
+              <span class="company">Raspi-sensor</span>
+              <span class="status">Plugin Node.js C++</span>
+            </div>
 						<span class="tags">
 							<span>Rapsberry Pi</span>
 							<span>C++</span>
 							<span>Node.js</span>
-						</span>
-						<p>
-							Plugin NodeJS réalisé en C++ permettant d’exploiter en JavaScript les informations de différents capteurs reliés à un RapsberryPi.
-						</p>
-						<span class="links">
+            </span>
+            <div class="quote">
+              Plugin NodeJS réalisé en C++ permettant d’exploiter en JavaScript les informations de différents capteurs
+              reliés à un RapsberryPi. Actuellement le DHT22 (température et humidité), le BMP 180 (température et pression)
+              et le TLS261 (luminosité) sont supportés.
+            </div>
+            <div class="summary">
+              <p>
+                Le plugin adopte un fonctionnement asynchrone cher au JavaScript, et propose un mode de récupération unique où
+                à intervalle régulier.
+              </p>
+            </div>
+            <span class="links">
 							<a href="https://github.com/Vuzi/raspi-sensors" class="github">github.com/Vuzi/raspi-sensors</a>
 							<a href="https://npmjs.com/package/raspi-sensors" class="npm">npmjs.com/package/raspi-sensors</a>
 						</span>
 					</div>
 					<div class="project">
+            <div>
+              <span class="company">Show Me</span>
+              <span class="status">Hébergement d'images</span>
+            </div>
 						<span class="tags">
-							<span>React</span>
-							<span>Electron</span>
+							<span>TypeScript</span>
 							<span>Node.js</span>
+							<span>React</span>
+							<span>Redux</span>
 						</span>
-						<span class="company">Blackjack 23</span>
-						<span class="status">Jeu de blackjack</span>
-						<p>
-							Application lourde utilisant Electron, avec React
-							pour la construction de son interface et la gestion de ses intéractions utilisateur.
-						</p>
-						<span class="links">
-							<a href="https://github.com/Vuzi/Blackjack-23" class="github">github.com/Vuzi/Blackjack-23</a>
-						</span>
-					</div>
-					<div class="project">
-						<span class="tags">
-							<span>lex/yacc</span>
-							<span>C</span>
-						</span>
-						<span class="company">Vuziks</span>
-						<span class="status">Interpréteur & langage</span>
-						<p>
-							Langage de scripting et son interpréteur, réalisé en C avec Lex et Yacc. Gestion d'un mode intéractif, des conditions, boucles, fonctions et objets.
-						</p>
+            <div class="quote">
+              Hébergeur d'images réalisé exclusivement en TypeScript. Il permet d'uploader des images avec des tags,
+              de les servir et également de les rechercher par tags ou nom.
+            </div>
 						<span class="links">
 							<a href="https://github.com/Vuzi/vuziks" class="github">github.com/Vuzi/vuziks</a>
 						</span>
 					</div>
-
 				</div>
+
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
